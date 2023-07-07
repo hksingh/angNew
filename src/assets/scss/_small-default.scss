@@ -1,0 +1,7 @@
+
+/**** Clearfix : Force an element to collapse ***/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear:both;
+}

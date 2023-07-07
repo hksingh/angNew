@@ -1,0 +1,22 @@
+<p>Dashboard home works!</p>
+<button mat-icon-button color="warn" aria-label="Take me to home" (click)="takeBackToHome()">
+    <mat-icon>phone</mat-icon>
+</button>
+<table>
+    <thead>
+        <th>
+
+        </th>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+    </thead>
+    <tr *ngFor="let people of peopleList">
+        <td><a [routerLink]="['/dashboard/', people.id]">Show Detail</a></td>
+        <td>{{people.firstName}}</td>
+        <td>{{people.lastName}}</td>
+    </tr>
+</table>
